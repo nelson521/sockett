@@ -1,3 +1,6 @@
+@import 'config';
+@import 'utilities';
+
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +10,64 @@
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.page-holder {
+  background: $bg-img no-repeat center right/cover;
+  height: 100vh;
+}
+
+// Nav
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 1.5rem;
+  align-items: center;
+
+  h1 {
+    padding: 1.5rem;
+
+    a {
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+    }
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 1.5rem;
+    letter-spacing: 1px;
+  }
+}
+
+// .hero {
+// }
+.hero-wrap {
+  text-align: center;
+  padding-top: 20%;
+  line-height: 1.6;
+
+  h1 {
+    font-size: 4rem;
+    color: #fff;
+  }
+
+  p {
+    font-size: 1.4rem;
+    color: #fff;
+  }
 }
