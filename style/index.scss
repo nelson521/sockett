@@ -12,6 +12,10 @@ body {
   line-height: 1.5;
 }
 
+img {
+  width: 100%;
+}
+
 a {
   color: #fff;
   text-decoration: none;
@@ -25,15 +29,19 @@ ul {
 .page-holder {
   background: $bg-img no-repeat center right/cover;
   height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 
 // Nav
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
-  text-align: center;
   padding-top: 1.5rem;
+  text-align: center;
   align-items: center;
+  overflow: hidden;
+  width: 100%;
 
   h1 {
     padding: 1.5rem;
@@ -46,16 +54,14 @@ ul {
 
   ul {
     display: flex;
-  }
 
-  li {
-    padding: 1.5rem;
-    letter-spacing: 1px;
+    li {
+      padding: 1.5rem;
+      letter-spacing: 1px;
+    }
   }
 }
 
-// .hero {
-// }
 .hero-wrap {
   text-align: center;
   padding-top: 20%;
@@ -69,5 +75,35 @@ ul {
   p {
     font-size: 1.4rem;
     color: #fff;
+    margin-bottom: 2rem;
   }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  text-align: center;
+  align-items: center;
+
+  h1 {
+    font-size: 2rem;
+    padding: 0 4.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    padding: 0 4.5rem;
+    line-height: 1.6;
+  }
+}
+
+.content-photo {
+  background-image: url('/img/woodWork1.jpeg');
+  background-color: #cccccc;
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }

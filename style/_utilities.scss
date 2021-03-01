@@ -1,5 +1,12 @@
-.container {
-  width: $website-width;
-  margin: auto;
-  overflow: hidden;
+// .container {
+//   width: $website-width;
+//   margin: 0 auto;
+//   overflow: hidden;
+// }
+
+.btn {
+  background: $main-color;
+  padding: 1.5rem;
+  border: none;
+  color: #fff;
 }
