@@ -67,7 +67,7 @@ ul {
   padding-top: 20%;
   line-height: 1.6;
 
-  h1 {
+  h2 {
     font-size: 4rem;
     color: #fff;
   }
@@ -85,16 +85,19 @@ ul {
   padding: 3rem 2rem;
   text-align: center;
   align-items: center;
+  min-height: 250px;
 
-  h1 {
+  h2 {
     font-size: 2rem;
     padding: 0 4.5rem;
+    width: 50%;
   }
 
   p {
     font-size: 1.2rem;
     padding: 0 4.5rem;
     line-height: 1.6;
+    width: 50%;
   }
 }
 
@@ -103,6 +106,43 @@ ul {
   background-color: #cccccc;
   height: 350px;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem 2rem;
+
+  h2 {
+    width: 50%;
+    font-size: 2rem;
+  }
+
+  .testimonials-content {
+    width: 50%;
+  }
+
+  p {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 4rem;
+    font-size: 1.2rem;
+
+    span {
+      margin-top: 1.2rem;
+    }
+  }
+}
+
+// Content photo second
+.content-photo-2 {
+  background-image: url('/img/woodWork2.jpeg');
+  background-color: #cccccc;
+  height: 450px;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
