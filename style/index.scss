@@ -191,6 +191,9 @@ ul {
 header#about-page {
   background: rgb(199, 171, 135);
   height: 50vh;
+  .ptag {
+    font-size: 1.2rem;
+  }
 }
 
 .container h1 {
@@ -202,7 +205,7 @@ header#about-page {
 #about-photo {
   background: url('/img/about.jpeg');
   height: 80vh;
-  background-position: right;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -228,6 +231,66 @@ header#about-page {
   justify-content: center;
   text-align: center;
   height: 30vh;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.container p {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+#services {
+  display: flex;
+  flex-direction: row;
+  padding: 3.5rem 5.5rem;
+
+  .service-1 {
+    width: 60%;
+
+    h2 {
+      padding-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+
+    p {
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  .service-2 {
+    width: 40%;
+    margin: 0 4.5rem;
+    h2 {
+      padding-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+
+    p {
+      padding-bottom: 1.5rem;
+    }
+  }
+}
+
+.consolation-content h2 {
+  color: $main-color;
+}
+
+.services-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 30vh;
+  background: rgb(199, 171, 135);
 
   h2 {
     font-size: 2rem;
